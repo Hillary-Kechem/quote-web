@@ -4,9 +4,8 @@ export class  Quote{
     constructor(public id: number,
         public authorName: string,
         public description: string,
-        public author:string,
-        public publishDate: Date)
-        {
-            this.showQuote=false;
+        public genre:string,
+        public publishDate: Date){
+      this.showQuote=false;
     }
   }
