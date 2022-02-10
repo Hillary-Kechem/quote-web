@@ -1,7 +1,3 @@
-<!-- <p>quote-description works!</p>
-<p>
-    {{quote.description}}</p>
-    <button class="btn btn-sm btn danger"(click)="quoteComplete(true)">Delete quote</button> -->
 
     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
         <div class="card-header">Quote</div>
@@ -10,8 +6,7 @@
           <p class="card-text">
             By: {{quote?.authorName}}<br>
             Quote:{{quote?.description}}<br>
-            published {{quote?.publishDate|date|dateCount}} days ago<br>
-            
+            published {{quote?.publishDate|date|dateCount}} days ago<br>            
           </p>
         </div>
       </div>

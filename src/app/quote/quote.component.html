@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <ul>
             <li class="list" *ngFor='let quote of quotes; let i=index' >
-              {{quote.genre}}
+              {{quote.author}}
           <div>
               <button class="btn" (click)='toggleDetails(i)'>VIEW QUOTE</button>
             </div>
