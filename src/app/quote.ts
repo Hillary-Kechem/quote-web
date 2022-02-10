@@ -1,12 +1,12 @@
-export class Quote {
-    // author: string;
-    // coolQuote: string;
-    // quoteDetails: string;
-
-
-    showDescription: boolean;
-    constructor(public author: string, public coolQuote: string, public description: string){
-        this.showDescription=false;
+export class  Quote{
+  
+    showQuote: boolean;
+    constructor(public id: number,
+        public authorName: string,
+        public description: string,
+        public genre:string,
+        public publishDate: Date)
+        {
+            this.showQuote=false;
     }
-}
-
+  }

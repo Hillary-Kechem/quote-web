@@ -8,16 +8,29 @@ import { Quote } from '../quote';
 })
 export class QuoteDescriptionComponent implements OnInit {
 
-  @Input() quote:Quote;
-  @Output() isComplete = new EventEmitter();
-
+  @Input() quote:Quote | undefined;
+  
+  @Output() isComplete = new EventEmitter<boolean>();
+  
   quoteComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
-
-  constructor() { }
-
-  ngOnInit(): void {
+  
+    numberOfLikes: number= 0;
+    likeButtonClick(){
+     this.numberOfLikes ++;
+  
+    }
+    numberOfDislikes: number= 0;
+    dislikeButtonClick(){
+     this.numberOfDislikes--;
+    }
+    
+  
+    constructor() { }
+  
+    ngOnInit(): void {
+    }
+  
+  
   }
-
-}

@@ -1,1 +1,20 @@
-<p>quote works!</p>
+
+<div class="container-fluid">
+    <h2>quotes place</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+            <li class="list" *ngFor='let quote of quotes; let i=index' >
+              {{quote.genre}}
+          <div>
+              <button class="btn" (click)='toggleDetails(i)'>VIEW QUOTE</button>
+            </div>
+              <app-quote-description *ngIf='quote.showQuote' [quote]="quote" (isComplete)="quoteComplete($event,i)" ></app-quote-description>
+            </li>
+          </ul>
+
+      </div>
+      <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+</div>
