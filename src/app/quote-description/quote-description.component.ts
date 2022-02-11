@@ -25,6 +25,7 @@ export class QuoteDescriptionComponent implements OnInit {
     dislikeButtonClick(){
      this.numberOfDislikes--;
     }
+     
     
     
   

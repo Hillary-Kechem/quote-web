@@ -12,13 +12,13 @@
       </div>
         <div>
           <h2>Number of likes:</h2>
-          
+         
           <button class= "btn btn-success"(click)="likeButtonClick()">Like</button>
-          {{numberOfLikes}} |<button class="btn btn-danger"(click)="dislikeButtonClick()">Dislike</button>
+          {{numberOfLikes}}
+         
+          <button class="btn btn-danger"(click)="dislikeButtonClick()">Dislike</button>
           {{numberOfDislikes}}
         </div>
         <button (click)= 'quoteComplete(true)' >Delete quote</button>
-      
-
 
         
