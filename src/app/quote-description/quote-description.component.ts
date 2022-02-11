@@ -26,6 +26,7 @@ export class QuoteDescriptionComponent implements OnInit {
      this.numberOfDislikes--;
     }
     
+    
   
     constructor() { }
   
